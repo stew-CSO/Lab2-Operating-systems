@@ -1,0 +1,15 @@
+CC = gcc 
+CFLAGS = -Wall 
+
+Target = prog2 
+
+all: $(TARGET)
+
+$(TARGET) : main2.c 
+	$(CC) $(CFLAGS) -o $(TARGET) main2.C
+
+run: $(TARGET)
+		./$(TARGET)
+
+clean: 
+		rm -f $(TARGET)
